@@ -45,3 +45,22 @@ body {
   font-family: Ubuntu;
   color: #eadddb;
 }
+@media screen and (max-width: 992px) {
+  .bl {
+    background: "";
+    background-color: rgb(100, 152, 219);
+    background-size: 70%;
+  }
+  .loading-text {
+    font-size: 20px;
+    color: black;
+  }
+  .welcome {
+    position: absolute;
+    text-align: center;
+    right: 30vw;
+    top: 20vh;
+    font-size: ;
+    color: rgb(121, 115, 115);
+  }
+}
