@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 227, 227);
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px rgba(2, 2, 2, 0.4);
+  overflow: hidden;
+  text-align: center;
+  width: 500px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.header {
+  background-color: rgb(14, 115, 231);
+  color: #fff;
+  padding: 30px 30px;
+}
+
+.header input {
+  background-color: rgba(0, 0, 0, 0.363);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.header input:focus {
+  outline: none;
+}
+
+.user-list {
+  background-color: rgb(247, 240, 240);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.user-list li {
+  display: flex;
+  padding: 20px;
+}
+
+.user-list img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+}
+
+.user-list .user-info {
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.user-list .user-info h4 {
+  margin: 0 0 10px;
+}
+
+.user-list .user-info p {
+  font-size: 14px;
+}
+
+.user-list li:not(:last-of-type) {
+  border-top: 1.5px solid rgba(160, 157, 157, 0.336);
+}
+
+.user-list li.hide {
+  display: none;
+}
