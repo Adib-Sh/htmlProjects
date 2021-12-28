@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #181818;
+    }
+
+
+    .frame{
+        width: 300px;
+        height: 150px;
+        box-shadow: 0px 0px 20px #000007;
+        border-radius: 25px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .border{
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: linear-gradient(to right, black 20%, #7ee2cd 47%, #ff6692 74%, #bad3ea 100%);
+        background-size: 200% auto;
+        animation: shine 2s infinite linear;
+        transform: rotate(-45deg);
+    }
+
+    .border::before{
+        content: "Loading";
+        transform: rotate(45deg);
+        width: 290px;
+        height: 140px;
+        background: #000007;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        font-size: 24px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border-radius: 25px;
+    }
+
+    @keyframes shine{
+        to{
+            background-position: 200% center;
+        }
+    }
+
+
+</style>
+<body>
+    <div class="frame">3
+        <div class="border"></div>
+    </div>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #181818;
+    }
+
+    div{
+        width: 200px;
+        height: 200px;
+        box-shadow: 16px 14px 20px black;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 35px;
+        
+    }
+
+    div::before{
+        content: "";
+        
+        width: 160%;
+        height: 160%;
+        position: absolute;
+        animation: rotate 4s infinite linear ;
+    }
+
+    div::after{
+        content: " Animated Button";
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        background-color: #101010;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: larger;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    .light_blue::before{
+        background: conic-gradient(rgb(5, 147, 212) 20deg, transparent 120deg);
+    }
+
+    .light_green::before{
+        background: conic-gradient(rgb(5, 218, 58) 20deg, transparent 120deg);
+    }
+
+    .yellow::before{
+        background: conic-gradient(rgb(174, 212, 5) 20deg, transparent 120deg);
+    }
+
+    .pink::before{
+        background: conic-gradient(rgb(212, 5, 102) 20deg, transparent 120deg);
+    }
+
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+
+</style>
+<body>
+    <div class="light_blue"></div>
+    <div class="light_green"></div>
+    <div class="pink"></div>
+    <div class="yellow"></div>
+    
+</body>
+</html>
